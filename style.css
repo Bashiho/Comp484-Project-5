@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1 {
+  display: block;
+}
+
+.correct {
+  background-color: #2ffb2b;
+  display: block;
+}
+
+.incorrect {
+  background-color: #fb2b2b;
+  display: block;
+}
+
+#timer {
+  display: block;
+  font-size: 1.6em;
+}
+
+#history {
+  display: block;
+}
+
+#history p {
+  margin: 0px;
+}
+
+#question {
+  display: block;
+  font-size: 2em;
+}
+
+#map {
+  height: 950px;
+  width: 795px;
+  display: block;
+  margin: 0 auto;
+  float: right;
+  filter: saturate(1.2) contrast(1.1);
+}

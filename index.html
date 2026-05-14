@@ -5,17 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Map Quiz</title>
-    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFHIN3eZmOUAPTXfeJkpRiHOSgqF7wIQo&callback=initMap">
+    </script>
 </head>
 
 <body>
     <header>
-        <h1></h1>
+        <h1>CSUN Map Quiz</h1>
     </header>
 
     <main class="main">
+        <div id="map">
+        </div>
 
+        <div id="question">
+            Score: ? / 5
+        </div>
+
+        <div id="timer">
+            00:00:00
+        </div>
+
+        <section id="history">
+            <div id="history">
+            </div>
+        </section>
+
+        <button id="start-button">Start Quiz</button>
     </main>
 </body>
 </html>
