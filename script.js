@@ -1,17 +1,3 @@
-/* 
-Locations:
-Chaparral Hall [34.23858918388787, -118.52726290595731], [34.23787269516686, -118.52670362006702]
-Jacaranda Hall [34.24214234976054, -118.52945907953603], [34.24099310198939, -118.52779240838052]
-University Library [34.24042584147259, -118.53006689290308], [34.2394566513524, -118.52860872952115]
-SRC [34.24062509423244, -118.5252023482621], [34.23930151915201, -118.52469897337525]
-B6 [34.24444603467655, -118.53278827155322], [34.2428719928213, -118.53183447850506]
-*/
-
-// TBD
-// Use Markers to set areas
-// Implement Quiz features
-// Add Timer
-
 let map;
 let AdvancedMarkerElement;
 var correct = 0, progress = 0, intervalID, minutes, seconds, dispms;
@@ -28,7 +14,7 @@ var answers = [
     "Jacaranda Hall",
     "University Library",
     "SRC",
-    "Black Box / B6"
+    "Black House / B6"
 ]
 
 const question = document.getElementById("question");
@@ -166,7 +152,7 @@ async function initMarkers() {
     });
 
     google.maps.event.addListener(b6, 'click', (evt) => {
-        checkAnswer("Black Box / B6")
+        checkAnswer("Black House / B6")
     });
  
     google.maps.event.addListener(liveOak, 'click', (evt) => {
